@@ -32,6 +32,7 @@ class Car {
           <div class="pencarian-body-text">
             <p class="tipe-mobil">${this.manufacture} ${this.model} / ${this.type}</p>
             <p class="harga-mobil">Rp ${this.rentPerDay.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} / hari</p>
+            <p class="specs-mobil">${this.specs}</p>
             <p class="deskripsi-mobil">${this.description}</p>
             <div class="col-lg-6 col-sm-12 deskripsi-text">
               <div class="marklist-container col-sm-12">

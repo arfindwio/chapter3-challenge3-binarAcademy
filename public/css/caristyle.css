@@ -224,7 +224,7 @@ input[type="time"]:valid::before {
 }
 
 .card-pencarian-body .car-thumbnail {
-    height: 400px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -244,9 +244,8 @@ input[type="time"]:valid::before {
     margin-right: 9px;
 }
 
-
 .mobil-pencarian {
-    width: 345px;
+    width: 45%;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     padding: 24px;
@@ -263,12 +262,6 @@ input[type="time"]:valid::before {
     font-weight: 700;
 }
 
-
-#cars-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-column-gap: 1.5em;
-}
 .card-item {
   background: #fff;
   width: 333px;

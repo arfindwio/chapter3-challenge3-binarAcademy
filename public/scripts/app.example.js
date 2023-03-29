@@ -22,9 +22,12 @@ class App {
       const miliDataTime = Number(dataTime.getTime());
       const dateFilter = miliDataTime < miliTimeInput;
       const capacityFilter = item.capacity >= penumpang;
+      const availableCar = item.available === true;
       const tipeSopir = driverType === "Dengan sopir" || driverType === "Tanpa sopir";
 
-      return tipeSopir && capacityFilter && dateFilter;
+      if (availableCar) {
+        return tipeSopir && capacityFilter && dateFilter;
+      }
     });
 
     Car.init(cars);
@@ -33,7 +36,7 @@ class App {
   run = () => {
     Car.list.forEach((car) => {
       const node = document.createElement("div");
-      node.classList.add("mobil-pencarian", "col-lg-4", "col-sm-12");
+      node.classList.add("mobil-pencarian", "col-lg-6", "col-sm-12");
       node.innerHTML = car.render();
 
       this.carContainerElement.appendChild(node);
