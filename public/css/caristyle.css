@@ -245,7 +245,8 @@ input[type="time"]:valid::before {
 }
 
 .mobil-pencarian {
-    width: 45%;
+    background-color: #f0f2f7;
+    width: 30%;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     padding: 24px;

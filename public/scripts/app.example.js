@@ -36,7 +36,7 @@ class App {
   run = () => {
     Car.list.forEach((car) => {
       const node = document.createElement("div");
-      node.classList.add("mobil-pencarian", "col-lg-6", "col-sm-12");
+      node.classList.add("mobil-pencarian", "col-lg-4", "col-sm-12");
       node.innerHTML = car.render();
 
       this.carContainerElement.appendChild(node);
